@@ -2,11 +2,11 @@
 type Operation = "add" | "subtract" | "multiply" | "divide";
 
 // Fonction pour effectuer une opération
-function calculate(
+export const calculate = (
   a: number,
   b: number,
   operation: Operation
-): number | string {
+): number | string => {
   switch (operation) {
     case "add":
       return a + b;
@@ -19,10 +19,4 @@ function calculate(
     default:
       return "Opération non valide";
   }
-}
-
-// Exemple d'utilisation
-console.log(calculate(10, 5, "add")); // Résultat : 15
-console.log(calculate(10, 5, "subtract")); // Résultat : 5
-console.log(calculate(10, 5, "multiply")); // Résultat : 50
-console.log(calculate(10, 0, "divide")); // Résultat : "Erreur : division par zéro"
+};

@@ -1,1 +1,1 @@
-import "./tps/calculator.ts";
+import "./app.calculator.ts";
